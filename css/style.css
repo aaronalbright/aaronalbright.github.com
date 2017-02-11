@@ -1,0 +1,49 @@
+header {
+  margin-top: 20px;
+}
+
+
+h1 {
+  color: #0086BE;
+}
+
+a h1.head {
+  line-height: 0.8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #0086BE;
+}
+
+.nav > li > a {
+    color: #080808;
+}
+
+.navbar-toggle {
+  float: left;
+  border-color: #ddd;
+}
+
+.navbar-collapse {
+  padding: 0px;
+}
+
+.nav > li > a {
+  font-size: 12pt;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: #0086BE
+}
+
+@media (min-width: 768px) {
+  .container.bar {
+    padding-left: 0px;
+  }
+}
