@@ -7,12 +7,21 @@ h1 {
   color: #0086BE;
 }
 
+a {
+  color: #0086BE;
+}
+
 a h1.head {
   line-height: 0.8;
 }
 
 a:hover {
   text-decoration: none;
+  color: #080808
+}
+
+h1.head > small {
+  font-weight: 300;
 }
 
 .navbar-toggle .icon-bar {
@@ -21,6 +30,8 @@ a:hover {
 
 .nav > li > a {
     color: #080808;
+    font-size: 12pt;
+    font-weight: 500;
 }
 
 .navbar-toggle {
@@ -32,14 +43,14 @@ a:hover {
   padding: 0px;
 }
 
-.nav > li > a {
-  font-size: 12pt;
-}
-
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: transparent;
     color: #0086BE
+}
+
+p {
+  font-size: 12pt;
 }
 
 @media (min-width: 768px) {
