@@ -7,11 +7,13 @@
   <title>Aaron Albright</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="_js/particles.min.js"></script>
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
+  <div id="particles-js"></div>
 <header>
   <div class="container">
     <a href="index.html"><h1 class="head">Aaron Albright <small>Journalism. Web Development. Data.</small></h1></a>
@@ -39,12 +41,12 @@
 <body>
   <div class="container">
     <h3>Coming Soon!</h3>
-  </div>
-    <!-- <p>I am a data journalist, web developer and graduating senior at the University of Florida College of Journalism and Communications. Most of my academic career has been spent working at the <a href="http://www.alligator.org/" target="_blank"> Independent Florida Alligator</a>. In 2016, I was the online managing editor.</p>
+    <p>I am a data journalist, web developer and graduating senior at the University of Florida College of Journalism and Communications. Most of my academic career has been spent working at the <a href="http://www.alligator.org/" target="_blank"> Independent Florida Alligator</a>. In 2016, I was the online managing editor.</p>
 
-    <p>I'm currently interning as an assistant photographer for the <a href="http://floridagators.com/" target="_blank">Florida Gators</a>.</p>
+    <p>I'm currently interning as an assistant photographer for the <a href="http://floridagators.com/"
+    target="_blank">Florida Gators</a>.</p>
+
 <div class="row">
-
     <div class="col-sm-6">
     <h3>Writing</h3>
     <h4><a href="https://www.wuft.org/news/2016/04/14/grec-argues-biomass-supplier-is-asking-for-too-much-money-in-its-breach-of-contract-lawsuit/" target="_blank">GREC Argues Biomass Supplier Is Asking For Too Much Money In Its Breach Of Contract Lawsuit</a><br><small>WUFT News — April 2016</small></h4>
@@ -57,8 +59,10 @@
       <h3>Projects</h3>
       <div class="thumbnail">
         <div class="caption">
-            <h4>The Alligator homepage redesign</h4>
-            <p>Current project</p>
+            <a href=""></a><img src="_files/pembroke.png" alt="Project Screenshot" width="100%">
+            <h4><small>Current</small></h4>
+            <h4>Project Pembroke</h4>
+            <p>Through an independent study at UF, I am building an app that helps users understand their car's language a little better. More specifically, the app uses dashboard warning lights so users can see what might be wrong with their car what, if anything, can be done about it. Additionally, data sourced from a third-party is included to cite the financial consequences and statistics of car maintenance neglect.</p>
         </div>
       </div>
       <div class="thumbnail">
@@ -75,10 +79,16 @@
       </div>
     </div>
       </div>
-  </div> -->
-
+  </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    particlesJS.load('particles-js', '_js/particlesjs-config.json', function(){
+        console.log('callback - particles.js config loaded');
+    });
+  });
+  </script>
 </body>
 </html>
