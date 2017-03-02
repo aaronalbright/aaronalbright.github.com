@@ -7,13 +7,12 @@
   <title>Aaron Albright</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="_js/particles.min.js"></script>
+  <script src="js/particles.min.js"></script>
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-  <div id="particles-js"></div>
 <header>
   <div class="container">
     <a href="index.html"><h1 class="head">Aaron Albright <small>Journalism. Web Development. Data.</small></h1></a>
@@ -29,7 +28,7 @@
       </button>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="_files/170214albright_resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="files/170214albright_resume.pdf" target="_blank">Resume</a></li>
           <li><a href="https://twitter.com/Tallbrighty" target="_blank">Twitter</a></li>
           <li><a href="https://github.com/aaronalbright" target="_blank">GitHub</a></li>
         </ul>
@@ -39,6 +38,7 @@
 </header>
 
 <body>
+  <div id="particles"></div>
   <div class="container">
     <h3>Coming Soon!</h3>
     <p>I am a data journalist, web developer and graduating senior at the University of Florida College of Journalism and Communications. Most of my academic career has been spent working at the <a href="http://www.alligator.org/" target="_blank"> Independent Florida Alligator</a>. In 2016, I was the online managing editor.</p>
@@ -59,7 +59,7 @@
       <h3>Projects</h3>
       <div class="thumbnail">
         <div class="caption">
-            <a href=""></a><img src="_files/pembroke.png" alt="Project Screenshot" width="100%">
+            <a href=""></a><img src="files/pembroke.png" alt="Project Screenshot" width="100%">
             <h4><small>Current</small></h4>
             <h4>Project Pembroke</h4>
             <p>Through an independent study at UF, I am building an app that helps users understand their car's language a little better. More specifically, the app uses dashboard warning lights so users can see what might be wrong with their car what, if anything, can be done about it. Additionally, data sourced from a third-party is included to cite the financial consequences and statistics of car maintenance neglect.</p>
@@ -85,7 +85,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-    particlesJS.load('particles-js', '_js/particlesjs-config.json', function(){
+    particlesJS.load('particles', 'js/particles.json', function(){
         console.log('callback - particles.js config loaded');
     });
   });
