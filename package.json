@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "parcel src/html/index.njk -p 3000",
-    "build": "parcel build src/html/index.njk --public-url ./docs --out-dir docs",
+    "build": "parcel build src/html/index.njk --public-url ./ --out-dir ./",
     "build-dev": "parcel build src/html/index.njk",
     "get:doc": "node ./utils/get-data.js $npm_package_config_docID doc"
   }
