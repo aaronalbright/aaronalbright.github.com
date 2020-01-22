@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Aaron Albright</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css"
+    />
+    <link rel="stylesheet" href="../scss/main.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="header__name">
+        <h1 class="name__head">Aaron Albright</h1>
+        <p class="name__subtitle">
+          News development | Interaction design | Data visualization
+        </p>
+      </div>
+      <div class="header__links">
+        <a class="link" href="https://twitter.com/tallbrighty" target="_blank"
+          ><i class="uil uil-twitter"></i> @tallbrighty</a
+        >
+        <a class="link" href="https://github.com/aaronalbright" target="_blank"
+          ><i class="uil uil-github"></i> Github</a
+        >
+        <a
+          class="link"
+          href="../assets/Aaron-Albright-Resume.pdf"
+          target="_blank"
+          ><i class="uil uil-briefcase"></i> Resume</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <p>
+          I'm an Interaction Designer at McClatchy. I'm based in Miami, Florida.
+          I specialize in web application development, data visualization and
+          interactive storytelling.
+        </p>
+        <p>
+          My design and development skills include (in no particular order):
+        </p>
+        <ul>
+          <li>Node</li>
+          <li>React</li>
+          <li>ES6+</li>
+          <li>Webpack</li>
+          <li>D3.js</li>
+          <li>Sass</li>
+          <li>Python</li>
+          <li>Golang</li>
+          <li>Sketch app</li>
+          <li>Adobe Iillustrator</li>
+          <li>QGIS</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="projects">
+        <h2 class="subhead">My projects</h2>
+        <h3>Data viz + front-end development</h3>
+        <div class="projects__grid flex">
+          {% for each in dataViz %}
+          <div class="flex__card">
+            <h4 class="card__title">
+              <a href="{{ each.url }}" target="_blank" rel="noopener noreferrer"
+                >{{ each.headline }}&nbsp;<i class="uil uil-link-h"></i
+              ></a>
+              {% if each.note %}
+              <span>{{ each.note }}</span>
+              {% endif %}
+            </h4>
+
+            <div class="card__with">Built with</div>
+            <div class="card__tech">
+              {% for t in each.tech%}
+              <div class="tech__item">{{ t }}</div>
+              {% endfor %}
+            </div>
+            {% if each.highlight %}
+            <a href="{{ each.highlight[0].url }}" class="card__highlight"
+              >{{ each.highlight[0].title }}
+              <i class="uil uil-external-link-alt"></i>
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
