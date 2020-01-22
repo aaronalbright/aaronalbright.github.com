@@ -1,6 +1,7 @@
 {
   "name": "albright-online",
   "version": "1.0.0",
+  "homepage": "https://aaronalbright.github.io/",
   "repository": "https://github.com/aaronalbright/aaronalbright.github.io.git",
   "author": "aaronalbright <aaron.albright38@gmail.com>",
   "license": "MIT",
@@ -14,14 +15,11 @@
     "sass": "^1.25.0"
   },
   "config": {
-    "remote": "https://media.miamiherald.com/static/media/projects/202-/",
-    "projectName": "journey-100",
-    "docID": "1iS_py08_LxR85W5xS_GtFzkGj7z0KwqyFA01F4H_bR8",
-    "sheetID": "1WDd5WdieQ1BIFZBALu99567WhYu9c9OsJhe7wbzVM18"
+    "docID": "1iS_py08_LxR85W5xS_GtFzkGj7z0KwqyFA01F4H_bR8"
   },
   "scripts": {
     "start": "parcel src/html/index.njk -p 3000",
-    "build": "parcel build src/html/index.njk --public-url ./ --out-dir ./",
+    "build": "parcel build src/html/index.njk",
     "build-dev": "parcel build src/html/index.njk --public-url ./dist/",
     "get:doc": "node ./utils/get-data.js $npm_package_config_docID doc"
   }
