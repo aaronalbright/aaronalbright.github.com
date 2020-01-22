@@ -41,7 +41,7 @@
     <main>
       <div class="intro">
         <p>
-          I'm at Interaction Designer at McClatchy. I'm based in Miami, Florida.
+          I'm an Interaction Designer at McClatchy. I'm based in Miami, Florida.
           I specialize in web application development, data visualization and
           interactive storytelling.
         </p>
@@ -73,10 +73,11 @@
               <a href="{{ each.url }}" target="_blank" rel="noopener noreferrer"
                 >{{ each.headline }}&nbsp;<i class="uil uil-link-h"></i
               ></a>
+              {% if each.note %}
+              <span>{{ each.note }}</span>
+              {% endif %}
             </h4>
-            {% if each.note %}
-            <p>{{ each.note }}</p>
-            {% endif %}
+
             <div class="card__with">Built with</div>
             <div class="card__tech">
               {% for t in each.tech%}
