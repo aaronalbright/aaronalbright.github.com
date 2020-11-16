@@ -11,16 +11,20 @@
     "gootenberg": "^1.4.2",
     "nunjucks": "^3.2.0",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nunjucks": "git+https://git@github.com/aaronalbright/parcel-plugin-nunjucks.git",
+    "parcel-plugin-nunjucks": "^2.2.2",
     "sass": "^1.25.0"
   },
   "config": {
     "docID": "1iS_py08_LxR85W5xS_GtFzkGj7z0KwqyFA01F4H_bR8"
   },
+  "browserslist": "defaults, not ie <= 11",
   "scripts": {
     "start": "parcel src/html/index.njk -p 3000",
-    "build": "parcel build src/html/index.njk --out-dir ./",
+    "build": "parcel build src/html/index.njk --out-dir build",
     "build-dev": "parcel build src/html/index.njk --public-url ./dist/",
     "get:doc": "node ./utils/get-data.js $npm_package_config_docID doc"
+  },
+  "devDependencies": {
+    "fs-extra": "^9.0.1"
   }
 }

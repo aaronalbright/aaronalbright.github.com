@@ -1,35 +1,61 @@
 @import 'base/noramlize';
 
+:root {
+  --hover-color: #E929F2;
+  --card-bg: hsl(226, 12%, 27%);
+  --bg: hsl(226, 25%, 10%);
+  --accent-color: #f33544;
+}
+
 body {
   max-width: 1000px;
   margin: 3em auto 3em;
   font-family: 'Montserrat', sans-serif;
-  background: #fffffe;
+  background: var(--bg);
+  color: #fff;
   padding: 0 0.76rem;
 }
 
 h1,
-h2 {
-  font-family: 'Comfortaa', cursive;
-  color: #094067;
+h2,
+h3 {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 h2 {
   font-weight: 400;
-  margin-bottom: 0.5em;
+  font-size: 2rem;
+  margin-bottom: 0.58em;
 }
 
 h3 {
-  color: #222;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-p {
-  color: #5f6c7b;
-}
-
-p,
-a {
-  font-family: 'Montserrat', sans-serif;
+main {
+  display: grid;
+  grid-template-columns:
+    2fr
+    1.5fr;
+  grid-template-areas: 
+  'intro intro'
+  'projects skills';
+  column-gap: 42px;
+  .intro {
+    grid-area: intro;
+  }
+  .projects {
+    grid-area: projects;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'intro' 'skills' 'projects';
+  }
 }
 
 .intro p {
@@ -38,18 +64,25 @@ a {
   max-width: 720px;
 }
 
-.intro li {
-  font-size: 1.2rem;
+.skills {
+  p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  li {
+    font-size: 1.2rem;
+  }
 }
 
-.intro ul {
-  color: #094067;
+
+.skills__box {
+  color: #fff;
   padding: 15px 30px 15px 50px;
+  box-shadow: 1px 5px 7px 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
   margin: 0;
-  background-color: #d8eefe;
+  background-color: var(--card-bg);
   border-radius: 5px;
-  border: 3.5px solid #094067;
 }
 
 .header__links {
@@ -57,10 +90,36 @@ a {
   flex-wrap: wrap;
 }
 
+.name__head {
+  color: hsl(355, 89%, 58%);
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.name__subtitle {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  color: rgb(220, 217, 247);
+  span {
+    color: #1DF2C8;
+    font-weight: bold;
+  }
+}
+
+.subhead {
+  color: hsl(355, 89%, 58%);
+}
+
+.projects__grid {
+  > * {
+    margin-bottom: 42px;
+  }
+}
+
 .link {
   text-decoration: none;
   color: #fffffe;
-  background-color: #094067;
+  background-color: var(--card-bg);
   border-radius: 2px;
   padding: 5px 15px;
   margin-right: 1em;
@@ -68,51 +127,19 @@ a {
   margin-bottom: 0.5rem;
   &:hover {
     box-shadow: 0 1px 5px 0 rgba($color: #000000, $alpha: 0.5);
-    color: #ef4565;
+    // background-color: rgb(220, 217, 247);
+    color: var(--hover-color)
   }
   .uil:before {
     margin-left: 0;
   }
 }
 
-.name__head {
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
-.name__subtitle {
-  color: #ef4565;
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-
-.subhead {
-  font-size: 2rem;
-}
-
-.projects__grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-@media (max-width: 768px) {
-  .intro ul {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .flex__card {
-  background-color: #094067;
-  color: #d8eefe;
+  background-color: var(--card-bg);
+  box-shadow: 1px 5px 7px 0 rgba(0, 0, 0, 0.25);
   padding: 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   p {
@@ -133,14 +160,14 @@ a {
     font-weight: 600;
     text-decoration: none;
     &:hover {
-      color: #ef4565;
+      color: var(--accent-color);
       text-decoration: underline;
     }
   }
   .card__highlight {
     margin-top: 1em;
     display: inline-block;
-    color: #ef4565;
+    color: var(--accent-color);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -153,13 +180,26 @@ a {
   .card__tech {
     display: flex;
     flex-wrap: wrap;
-    > * {
+    > .tech__item {
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
-      background-color: #3da9fc;
+      background-color: hsl(226, 24%, 49%);
       color: #fffffe;
-      border-radius: 1px;
+      border-radius: 2px;
       padding: 6px 15px;
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .intro ul {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

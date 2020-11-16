@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About Aaron Albright</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,600,700&display=swap"
       rel="stylesheet"
@@ -20,7 +22,7 @@
       <div class="header__name">
         <h1 class="name__head">Aaron Albright</h1>
         <p class="name__subtitle">
-          News development | Interaction design | Data visualization
+          News development <span>+</span> Interaction design <span>+</span> Data visualization
         </p>
       </div>
       <div class="header__links">
@@ -36,19 +38,29 @@
           target="_blank"
           ><i class="uil uil-briefcase"></i> Resume</a
         >
+        <a
+          class="link"
+          href="mailto:albright@hey.com"
+          target="_blank"
+          ><i class="uil uil-envelope"></i> albright@hey.com</a
+        >
       </div>
     </header>
     <main>
       <div class="intro">
         <p>
-          I'm an Interaction Designer at McClatchy. I'm based in Miami, Florida.
+          I'm a Senior Experience Designer based in Miami, Florida.
           I specialize in web application development, data visualization and
-          interactive storytelling.
+          interactive storytelling at McClatchy and its newsrooms around the country.
         </p>
+        
+      </div>
+      <div class="skills">
+        <h3 class="subhead">Design + development skills</h3>
         <p>
-          My design and development skills include (in no particular order):
+          (in no particular order)
         </p>
-        <ul>
+        <ul class="skills__box">
           <li>Node</li>
           <li>React</li>
           <li>ES6+</li>
@@ -64,8 +76,7 @@
         </ul>
       </div>
       <div class="projects">
-        <h2 class="subhead">My projects</h2>
-        <h3>Data viz + front-end development</h3>
+        <h2 class="subhead">Projects</h2>
         <div class="projects__grid flex">
           {% for each in dataViz %}
           <div class="flex__card">
@@ -95,6 +106,6 @@
         </div>
       </div>
     </main>
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
   </body>
 </html>
