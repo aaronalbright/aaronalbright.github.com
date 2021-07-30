@@ -1,10 +1,14 @@
-@import 'base/noramlize';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
-  --hover-color: #E929F2;
+  --hover-color: #e929f2;
   --card-bg: hsl(226, 12%, 27%);
-  --bg: hsl(226, 25%, 10%);
+  --bg: #F2E6E1;
   --accent-color: #f33544;
+  --txt-color: #333;
+  --sub-color: orchid;
 }
 
 body {
@@ -12,9 +16,18 @@ body {
   margin: 3em auto 3em;
   font-family: 'Montserrat', sans-serif;
   background: var(--bg);
-  color: #fff;
+  color: var(--txt-color);
   padding: 0 0.76rem;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --hover-color: #e929f2;
+    --card-bg: hsl(226, 12%, 27%);
+    --bg: hsl(226, 25%, 10%);
+    --accent-color: #f33544;
+  }
+} */
 
 h1,
 h2,
@@ -39,22 +52,18 @@ main {
   grid-template-columns:
     2fr
     1.5fr;
-  grid-template-areas: 
-  'intro intro'
-  'projects skills';
+  grid-template-areas:
+    'intro intro'
+    'projects skills';
   column-gap: 42px;
-  .intro {
+  & .intro {
     grid-area: intro;
   }
-  .projects {
+  & .projects {
     grid-area: projects;
   }
-  .skills {
+  & .skills {
     grid-area: skills;
-  }
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'intro' 'skills' 'projects';
   }
 }
 
@@ -65,15 +74,14 @@ main {
 }
 
 .skills {
-  p {
+  & p {
     margin-top: 0;
     font-size: 14px;
   }
-  li {
+  & li {
     font-size: 1.2rem;
   }
 }
-
 
 .skills__box {
   color: #fff;
@@ -91,7 +99,7 @@ main {
 }
 
 .name__head {
-  color: hsl(355, 89%, 58%);
+  color: var(--accent-color);
   font-size: 3em;
   margin-bottom: 0;
 }
@@ -99,15 +107,15 @@ main {
 .name__subtitle {
   font-size: 1.5em;
   margin: 0.5em 0;
-  color: rgb(220, 217, 247);
+  color: var(--sub-color);
   span {
-    color: #1DF2C8;
+    color: #1df2c8;
     font-weight: bold;
   }
 }
 
 .subhead {
-  color: hsl(355, 89%, 58%);
+  color: var(--accent-color);
 }
 
 .projects__grid {
@@ -127,10 +135,9 @@ main {
   margin-bottom: 0.5rem;
   &:hover {
     box-shadow: 0 1px 5px 0 rgba($color: #000000, $alpha: 0.5);
-    // background-color: rgb(220, 217, 247);
-    color: var(--hover-color)
+    color: var(--hover-color);
   }
-  .uil:before {
+  & .uil:before {
     margin-left: 0;
   }
 }
@@ -142,20 +149,20 @@ main {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  p {
+  & p {
     color: #d8eefe;
   }
-  h4 {
+  & h4 {
     margin: 0 0 3rem 0;
     line-height: 1.3;
     font-size: 1.2rem;
   }
-  h4 span {
+  & h4 span {
     display: block;
     font-weight: normal;
     font-size: 1rem;
   }
-  h4 a {
+  & h4 a {
     color: #fffffe;
     font-weight: 600;
     text-decoration: none;
@@ -164,7 +171,7 @@ main {
       text-decoration: underline;
     }
   }
-  .card__highlight {
+  & .card__highlight {
     margin-top: 1em;
     display: inline-block;
     color: var(--accent-color);
@@ -173,14 +180,14 @@ main {
       text-decoration: underline;
     }
   }
-  .card__with {
+  & .card__with {
     margin-bottom: 0.5rem;
     margin-top: auto;
   }
-  .card__tech {
+  & .card__tech {
     display: flex;
     flex-wrap: wrap;
-    > .tech__item {
+    & > .tech__item {
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
       background-color: hsl(226, 24%, 49%);
@@ -190,7 +197,6 @@ main {
     }
   }
 }
-
 
 @media (max-width: 768px) {
   .intro ul {

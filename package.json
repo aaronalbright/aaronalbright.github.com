@@ -1,30 +1,32 @@
 {
   "name": "albright-online",
   "version": "1.0.0",
+  "description": "Aaron Albright's personal website",
   "homepage": "https://aaronalbright.github.io/",
   "repository": "https://github.com/aaronalbright/aaronalbright.github.io.git",
   "author": "aaronalbright <aaron.albright38@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^9.7.4",
-    "eslint": "^6.8.0",
-    "gootenberg": "^1.4.2",
-    "nunjucks": "^3.2.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nunjucks": "^2.2.2",
-    "sass": "^1.25.0"
+    "normalize.css": "^8.0.1",
+    "tailwindcss": "^2.2.7"
   },
   "config": {
     "docID": "1iS_py08_LxR85W5xS_GtFzkGj7z0KwqyFA01F4H_bR8"
   },
-  "browserslist": "defaults, not ie <= 11",
   "scripts": {
-    "start": "parcel src/html/index.njk -p 3000",
-    "build": "parcel build src/html/index.njk --out-dir ./",
-    "build-dev": "parcel build src/html/index.njk --public-url ./dist/",
-    "get:doc": "node ./utils/get-data.js $npm_package_config_docID doc"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "fs-extra": "^9.0.1"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^6.8.0",
+    "fs-extra": "^9.0.1",
+    "postcss": "^8.3.6",
+    "postcss-nesting": "^8.0.1",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3",
+    "vite": "^2.3.2"
   }
 }

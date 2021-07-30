@@ -1,0 +1,8 @@
+{
+    "emmet.includeLanguages": {
+        "postcss": "scss",
+    },
+    "files.associations": {
+        "*.css": "scss"
+    }
+}
