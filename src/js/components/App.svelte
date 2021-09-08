@@ -1,11 +1,15 @@
+<script>
+  import Header from './Header.svelte';
+  import Intro from './Intro.svelte';
+  import Links from './Links.svelte'
+</script>
+
+<Header/>
+
 <main>
-  <div class="intro">
-    <p>
-      I'm a Senior Experience Designer based in Miami, Florida. I specialize in
-      web application development, data visualization and interactive
-      storytelling at McClatchy and its newsrooms around the country.
-    </p>
-  </div>
+  <Links/> 
+  <Intro/>
+
   <div class="skills">
     <h3 class="subhead">Design + development skills</h3>
     <p>(in no particular order)</p>

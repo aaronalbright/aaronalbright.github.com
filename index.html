@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,33 +19,22 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css"
     />
+    <script>
+      localStorage.theme = 'light'
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <link rel="stylesheet" href="/src/css/index.css" />
   </head>
-  <body>
-    <header>
-      <div class="header__name">
-        <h1 class="name__head">Aaron Albright</h1>
-        <p class="name__subtitle">
-          Front-end development <span>+</span> Interaction design <span>+</span> Data
-          visualization
-        </p>
-      </div>
-      <div class="header__links">
-        <a class="link" href="https://twitter.com/tallbrighty" target="_blank"
-          ><i class="uil uil-twitter"></i> @tallbrighty</a
-        >
-        <a class="link" href="https://github.com/aaronalbright" target="_blank"
-          ><i class="uil uil-github"></i> Github</a
-        >
-        <a class="link" href="/Aaron-Albright-Resume.pdf" target="_blank"
-          ><i class="uil uil-briefcase"></i> Resume</a
-        >
-        <a class="link" href="mailto:albright@hey.com" target="_blank"
-          ><i class="uil uil-envelope"></i> albright@hey.com</a
-        >
-      </div>
-    </header>
-    <div id="root"></div>
+  <body class="container mx-auto px-4 bg-gray-100 dark:bg-gray-800 dark:text-white max-w-screen-xl">
+    <div id="root" class="mx-auto my-8 md:my-24"></div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

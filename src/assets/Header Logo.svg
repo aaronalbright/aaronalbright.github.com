@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="110px" viewBox="0 0 200 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#FA6579" offset="0%"></stop>
+            <stop stop-color="#F33544" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="31.9513204%" y1="11.8345965%" x2="72.8094822%" y2="86.0809267%" id="linearGradient-2">
+            <stop stop-color="#3CAFD2" offset="0%"></stop>
+            <stop stop-color="#1C77A6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="71.4489938%" y1="13.5049492%" x2="24.0411786%" y2="85.5040195%" id="linearGradient-3">
+            <stop stop-color="#E971FA" offset="0%"></stop>
+            <stop stop-color="#CD3DF2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mDPI-Laptop" transform="translate(-540.000000, -61.000000)">
+            <g id="Group-9" transform="translate(540.000000, 62.000000)">
+                <text id="aron-lbright" font-family="UbuntuMono-Bold, Ubuntu Mono" font-size="48" font-weight="bold" line-spacing="42" fill="#222222">
+                    <tspan x="31.5" y="61">aron</tspan>
+                    <tspan x="31.5" y="103">lbright</tspan>
+                </text>
+                <g id="Group" transform="translate(135.000000, 0.000000)">
+                    <polygon id="Polygon" fill="url(#linearGradient-1)" points="32.5 0 46.5810023 8.06275906 46.5810023 24.1882772 32.5 32.2510363 18.4189977 24.1882772 18.4189977 8.06275906"></polygon>
+                    <polygon id="Polygon" fill="url(#linearGradient-2)" points="48.740659 26.6905128 62.8216614 34.7532718 62.8216614 50.87879 48.740659 58.941549 34.6596567 50.87879 34.6596567 34.7532718"></polygon>
+                    <polygon id="Polygon" fill="url(#linearGradient-3)" points="16.259341 26.7489637 30.3403433 34.8117228 30.3403433 50.9372409 16.259341 59 2.17833864 50.9372409 2.17833864 34.8117228"></polygon>
+                    <path d="M32.7645666,1.57124703 C32.2802271,2.21867958 32.3368353,3.03388619 32.9343913,4.01686686 C37.4947168,11.5618995 52.9657017,39.2543829 54.6809615,42.0896202 C57.981712,47.5455928 60.326412,50.2998297 61.7150615,50.3523307" id="Line-2" stroke="#000000" stroke-width="2.805" stroke-linecap="square"></path>
+                    <path d="M3.60988621,1.57124703 C3.12554666,2.21867958 3.1821549,3.03388619 3.77971093,4.01686686 C8.34003642,11.5618995 23.8110213,39.2543829 25.5262811,42.0896202 C28.8270316,47.5455928 31.1717316,50.2998297 32.5603811,50.3523307" id="Line-2" stroke="#000000" stroke-width="2.805" stroke-linecap="square" transform="translate(17.922513, 25.961789) scale(-1, 1) translate(-17.922513, -25.961789) "></path>
+                </g>
+                <text id="A-A" font-family="UbuntuMono-Bold, Ubuntu Mono" font-size="64" font-weight="bold" line-spacing="41" fill="#222222">
+                    <tspan x="0" y="71">A</tspan>
+                    <tspan x="0" y="112">A</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
