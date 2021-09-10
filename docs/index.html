@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Aaron Albright | albright.online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Montserrat:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css"
+    />
+    <script>
+      localStorage.theme = 'light'
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+    <script type="module" crossorigin src="/assets/index.3b67cc1f.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.02974441.js">
+    <link rel="stylesheet" href="/assets/index.787f0788.css">
+  </head>
+  <body class="container mx-auto my-8 md:my-24 px-4 bg-gray-100 dark:bg-gray-800 dark:text-white max-w-screen-xl">
+    <div id="root" class="cotainer mx-auto"></div>
+    
+  </body>
+</html>
