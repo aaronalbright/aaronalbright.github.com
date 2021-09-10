@@ -1,4 +1,4 @@
-<div class="links flex items-center flex-row flex-wrap mx-auto text-white mb-8">
+<div class="links flex justify-center items-center flex-row flex-wrap mx-auto text-white mb-8 max-w-3xl">
   <a target="_blank" href="https://twitter.com/tallbrighty"><i class="uil uil-twitter"></i> @tallbrighty</a>
   <a target="_blank" href="https://github.com/aaronalbright"><i class="uil uil-github"></i> GitHub</a>
   <a target="_blank" href="/Aaron-Albright-Resume.pdf"><i class="uil uil-briefcase"></i> Resume</a>

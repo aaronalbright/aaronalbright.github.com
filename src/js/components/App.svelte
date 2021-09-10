@@ -2,6 +2,7 @@
   import Header from './Header.svelte';
   import Intro from './Intro.svelte';
   import Links from './Links.svelte'
+  import Projects from './Projects.svelte';
 </script>
 
 <Header/>
@@ -10,25 +11,31 @@
   <Links/> 
   <Intro/>
 
-  <div class="skills">
-    <h3 class="subhead">Design + development skills</h3>
-    <p>(in no particular order)</p>
-    <ul class="skills__box">
-      <li>Node</li>
-      <li>React</li>
-      <li>ES6+</li>
-      <li>Webpack</li>
-      <li>D3.js</li>
-      <li>Sass</li>
-      <li>Python</li>
-      <li>Golang</li>
-      <li>Sketch app</li>
-      <li>Adobe Iillustrator</li>
-      <li>QGIS</li>
-      <li>SQL</li>
-    </ul>
-  </div>
-  <div class="projects">
-    <h2 class="subhead">Projects</h2>
+  <h2 class="text-3xl max-w-3xl mx-auto text-gray-900 dark:text-red-50">Projects</h2>
+  <p class="comment-desc max-w-3xl mx-auto">A collection of published work and the tools I used to make them</p>
+  <Projects/>
+
+  <div>
+    <h2 class="text-xl max-w-3xl mx-auto text-gray-900 dark:text-red-50">More coming soon!</h2>
+    <p class="comment-desc max-w-3xl mx-auto">The consequences of code decay circa 2018</p>
   </div>
 </main>
+
+<style>
+
+  h2 {
+    font-family: var(--tf);
+    font-weight: bold;
+  }
+
+  .comment-desc {
+    font-family: var(--mono);
+    color: var(--blue);
+    line-height: 1;
+  }
+
+  .comment-desc::before {
+    font-family: var(--mono);
+    content: '// ';
+  }
+</style>
