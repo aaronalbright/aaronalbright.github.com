@@ -4,28 +4,43 @@
       "headline": "People just like you get COVID-19. See the stories and information most relevant to you",
       "url": "https://www.miamiherald.com/news/coronavirus/article244283112.html",
       "id": "justlikeyou",
-      "tech": ["React", "D3.js", "Sketch", "R", "Excel"],
+      "tech": ["React", "D3.js", "Sketch", "R", "Parcel"],
       "year": "2020"
     },
     {
-      "headline": "See how many people in Florida have been vaccinated — and how to make an appointment",
+      "headline": "See how many people in Florida have been vaccinated",
       "url": "https://www.miamiherald.com/news/coronavirus/article250472896.html",
       "id": "vaccine",
       "tech": ["Svelte", "Vite", "D3.js"],
       "year": "2021"
     },
+
+    {
+      "headline": "Ibis: Hurricane GIS data scraper written in Node.js",
+      "note": "No longer live. A screenshot is linked.",
+      "url": "https://github.com/aaronalbright/ibis-gis",
+      "id": "hurricane",
+      "tech": ["Node.js", "D3.js", "Vite.js"],
+      "year": "2021",
+      "highlight": [
+        {
+          "title": "Ibis on GitHub",
+          "url": "https://github.com/aaronalbright/ibis-gis"
+        }
+      ]
+    },
     {
       "headline": "Floridians flattened the COVID curve. Then, amid upbeat talk, the numbers began to rise",
       "url": "https://www.miamiherald.com/news/coronavirus/article243363086.html?fbclid=IwAR1lDgNqo94bQYuPpHxtrvnaadtSmJMtMYqWcHfYnrzHyR-tTT40sAL_DUc",
       "id": "numbersgame",
-      "tech": ["D3.js", "Scrollama", "Sketch", "R", "Parcel"],
+      "tech": ["D3.js", "Scrollama", "Sketch", "Parcel"],
       "year": "2020"
     },
     {
       "headline": "Who has gained access to President Trump and Mar-a-Lago through Cindy Yang?",
       "url": "https://www.miamiherald.com/news/nation-world/article228882284.html",
       "id": "cindyyang",
-      "tech": ["D3.js", "Excel", "Observable", "Parcel", "Pym.js"],
+      "tech": ["D3.js", "Observable", "Parcel"],
       "year": "2019",
       "highlight": [
         {
@@ -38,26 +53,12 @@
       "headline": "How sex abuser Jeffrey Epstein is connected to Trump, Clinton",
       "url": "https://www.miamiherald.com/news/local/article221897990.html",
       "id": "epstein",
-      "tech": ["D3.js", "Observable", "Pym.js", "Webpack", "Gulp"],
+      "tech": ["D3.js", "Observable", "Gulp"],
       "year": "2018",
       "highlight": [
         {
           "title": "Bronze medal: Society for News Design Best of Digital Design 2018, Information Graphics",
           "url": "https://www.snd.org/2019/02/best-of-digital-bronze-medal-winners/"
-        }
-      ]
-    },
-    {
-      "headline": "Ibis: Hurricane GIS data scraper written in Node.js",
-      "note": "No longer live. A screenshot is linked.",
-      "url": "https://github.com/aaronalbright/ibis-gis",
-      "id": "hurricane",
-      "tech": ["Node", "D3.js", "QGIS", "Ibis", "Parcel"],
-      "year": "2021",
-      "highlight": [
-        {
-          "title": "Ibis on GitHub",
-          "url": "https://github.com/aaronalbright/ibis-gis"
         }
       ]
     }

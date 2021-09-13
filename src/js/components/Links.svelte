@@ -2,7 +2,7 @@
   <a target="_blank" href="https://twitter.com/tallbrighty"><i class="uil uil-twitter"></i> @tallbrighty</a>
   <a target="_blank" href="https://github.com/aaronalbright"><i class="uil uil-github"></i> GitHub</a>
   <a target="_blank" href="/Aaron-Albright-Resume.pdf"><i class="uil uil-briefcase"></i> Resume</a>
-  <a target="_blank" href="mailto:albright@hey.com"><i class="uil uil-twitter"></i> albright@hey.com</a>
+  <a target="_blank" href="mailto:albright@hey.com"><i class="uil uil-envelope"></i> albright@hey.com</a>
 </div>
 
 <style>

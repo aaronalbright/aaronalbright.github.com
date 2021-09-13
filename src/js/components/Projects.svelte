@@ -2,9 +2,16 @@
   // @ts-nocheck
 
   import { dataViz } from '../../data/projects.json';
+  import Toolbelt from './Toolbelt.svelte';
 
   function getImageUrl(name) {
     return new URL(`../../assets/${name}.png`, import.meta.url).href;
+  }
+
+  let hoverTech = false;
+
+  function hanldeHover() {
+    hoverTech = true;
   }
 
   function handleImage(e) {
@@ -19,35 +26,41 @@
     {#if i == 0}
       <article
         id={proj.id || 'proj-' + i}
-        class="bg-white shadow-lg rounded-md dark:bg-gray-900 transition hover:shadow-2xl hover:scale-105 overflow-hidden lead"
+        class="flex flex-col bg-white shadow-lg rounded-md dark:bg-gray-900 overflow-hidden lead"
       >
-        <a href={proj.url} class="flex flex-col h-full">
-          <div class="img-wrapper h-4/6">
-            <img src={getImageUrl(proj.id)} alt={proj.headline} class="object-cover h-full w-full object-center" />
-          </div>
-          <div class="head-wrapper grad-purple flex-auto">
-            <span class="block text-lg leading-none">{proj.year}</span>
-            <h3>{proj.headline}</h3>
-          </div>
+        <a href={proj.url} class="img-wrapper h-4/6">
+          <img
+            src={getImageUrl(proj.id)}
+            alt={proj.headline}
+            class="object-cover h-full w-full object-center"
+          />
         </a>
+        <div class="head-wrapper grad-purple flex-auto">
+          <span class="block text-lg leading-none">{proj.year}</span>
+          <a href={proj.url}>
+            <h3>{proj.headline}</h3>
+          </a>
+          <Toolbelt tech={proj.tech} />
+        </div>
       </article>
     {:else}
       <article
         id={proj.id || 'proj-' + i}
-        class="bg-white shadow-lg rounded-md dark:bg-gray-900 transition hover:shadow-2xl hover:scale-105 overflow-hidden"
+        class="bg-white shadow-lg rounded-md dark:bg-gray-900 transition hover:shadow-2xl overflow-hidden relative"
       >
-        <a href={proj.url} class="relative block h-full">
-          <img
-            src={getImageUrl(proj.id)}
-            alt={proj.headline}
-            class="object-cover h-full w-full"
-            on:error={e => handleImage(e)}
-          />
-          <div class="head-wrapper absolute h-full w-full inset-0">
-            <span class="block text-lg leading-none">{proj.year}</span>
+        <img
+          src={getImageUrl(proj.id)}
+          alt={proj.headline}
+          class="object-cover h-full w-full"
+          on:error={e => handleImage(e)}
+        />
+        <div class="head-wrapper absolute h-full w-full inset-0">
+          <span class="block text-lg leading-none">{proj.year}</span>
+          <a href="{proj.url}">
             <h3>{proj.headline}</h3>
-          </div>
-        </a>
+          </a>
+          <Toolbelt tech={proj.tech} />
+        </div>
       </article>
     {/if}
   {/each}
@@ -60,13 +73,13 @@
 
   @media (min-width: 768px) {
     .grid {
-      grid-auto-rows: 200px;
+      grid-auto-rows: 200px 200px 230px;
       max-width: 940px;
     }
   }
 
   h3 {
-    @apply font-medium text-xl;
+    @apply font-semibold text-xl;
     font-family: var(--tf);
   }
 
@@ -88,7 +101,7 @@
   }
 
   article:nth-of-type(4n) .head-wrapper {
-    background: rgba(23,88,121,0.7);
+    background: rgba(23, 88, 121, 0.7);
   }
 
   .grad-purple {
@@ -99,15 +112,15 @@
     );
   }
 
-  article:not(.lead):nth-of-type(4n+1) .head-wrapper {
-    background: rgba(243,53,68,0.66);
+  article:not(.lead):nth-of-type(4n + 1) .head-wrapper {
+    background: rgba(243, 53, 68, 0.66);
   }
 
-  article:not(.lead):nth-of-type(4n+2) .head-wrapper {
-    background: rgba(117,18,143,0.71);
+  article:not(.lead):nth-of-type(4n + 2) .head-wrapper {
+    background: rgba(117, 18, 143, 0.71);
   }
 
-  article:not(.lead):nth-of-type(4n+3) .head-wrapper {
+  article:not(.lead):nth-of-type(4n + 3) .head-wrapper {
     background: rgba(193, 97, 23, 0.65);
   }
 
@@ -119,7 +132,6 @@
       rgba(28, 120, 166, 0.7) 93%
     ) !important;
   }
-
 
   article:nth-of-type(2) .head-wrapper {
     background: none !important;
