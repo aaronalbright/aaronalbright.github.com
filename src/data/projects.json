@@ -4,63 +4,62 @@
       "headline": "People just like you get COVID-19. See the stories and information most relevant to you",
       "url": "https://www.miamiherald.com/news/coronavirus/article244283112.html",
       "id": "justlikeyou",
-      "tech": ["React", "D3.js", "Sketch", "R", "Parcel"],
-      "year": "2020"
+      "year": "2020",
+      "tech": ["React", "D3.js", "Sketch", "R", "Parcel"]
     },
     {
       "headline": "See how many people in Florida have been vaccinated",
       "url": "https://www.miamiherald.com/news/coronavirus/article250472896.html",
       "id": "vaccine",
-      "tech": ["Svelte", "Vite", "D3.js"],
-      "year": "2021"
-    },
-
-    {
-      "headline": "Ibis: Hurricane GIS data scraper written in Node.js",
-      "note": "No longer live. A screenshot is linked.",
-      "url": "https://github.com/aaronalbright/ibis-gis",
-      "id": "hurricane",
-      "tech": ["Node.js", "D3.js", "Vite.js"],
       "year": "2021",
-      "highlight": [
-        {
-          "title": "Ibis on GitHub",
-          "url": "https://github.com/aaronalbright/ibis-gis"
-        }
-      ]
+      "tech": ["Svelte", "Vite", "D3.js"]
+    },
+    {
+      "headline": "Ibis: Hurricane GIS data scraper and formatting application",
+      "url": "https://i.imgur.com/WqofFJJ.png",
+      "id": "hurricane",
+      "year": "2021",
+      "tech": ["Node.js", "D3.js", "Vite.js"]
     },
     {
       "headline": "Floridians flattened the COVID curve. Then, amid upbeat talk, the numbers began to rise",
       "url": "https://www.miamiherald.com/news/coronavirus/article243363086.html?fbclid=IwAR1lDgNqo94bQYuPpHxtrvnaadtSmJMtMYqWcHfYnrzHyR-tTT40sAL_DUc",
       "id": "numbersgame",
-      "tech": ["D3.js", "Scrollama", "Sketch", "Parcel"],
-      "year": "2020"
+      "year": "2020",
+      "tech": ["D3.js", "Scrollama", "Sketch", "Parcel"]
     },
     {
       "headline": "Who has gained access to President Trump and Mar-a-Lago through Cindy Yang?",
       "url": "https://www.miamiherald.com/news/nation-world/article228882284.html",
       "id": "cindyyang",
-      "tech": ["D3.js", "Observable", "Parcel"],
       "year": "2019",
-      "highlight": [
-        {
-          "title": "Observable notebook",
-          "url": "https://observablehq.com/@aaronalbright/access-for-sale-network-graph"
-        }
-      ]
+      "tech": ["D3.js", "Observable", "Parcel"]
+    },
+    {
+      "headline": "Where can you afford to rent or buy in South Florida? This tool will show you",
+      "url": "https://www.miamiherald.com/news/local/community/miami-dade/article229998699.html",
+      "id": "soflorent",
+      "year": "2019",
+      "tech": ["React", "D3.js", "Parcel", "Leaflet"]
     },
     {
       "headline": "How sex abuser Jeffrey Epstein is connected to Trump, Clinton",
       "url": "https://www.miamiherald.com/news/local/article221897990.html",
       "id": "epstein",
-      "tech": ["D3.js", "Observable", "Gulp"],
       "year": "2018",
-      "highlight": [
-        {
-          "title": "Bronze medal: Society for News Design Best of Digital Design 2018, Information Graphics",
-          "url": "https://www.snd.org/2019/02/best-of-digital-bronze-medal-winners/"
-        }
-      ]
+      "tech": ["D3.js", "Observable", "Gulp"]
+    },
+    {
+      "headline": "Dirty Gold, Clean Cash: How Miami’s gold trade fuels drug trafficking in Latin America",
+      "url": "https://www.miamiherald.com/news/nation-world/world/americas/article194362569.html",
+      "id": "dirtygold",
+      "year": "2018",
+      "tech": ["Mapbox GL JS", "QGIS", "Gulp"]
     }
-  ]
+  ],
+  "headline": "COVID-19 tracker: Known Florida coronavirus cases and deaths by day and county",
+  "url": "https://www.miamiherald.com/news/coronavirus/article242270081.html",
+  "id": "covidtracker",
+  "year": "2020",
+  "tech": ["D3.js", "Sketch", "Parcel"]
 }

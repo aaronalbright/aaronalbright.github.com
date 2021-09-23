@@ -8,12 +8,6 @@
     return new URL(`../../assets/${name}.png`, import.meta.url).href;
   }
 
-  let hoverTech = false;
-
-  function hanldeHover() {
-    hoverTech = true;
-  }
-
   function handleImage(e) {
     e.target.src = '';
     e.target.alt = '';
@@ -28,14 +22,14 @@
         id={proj.id || 'proj-' + i}
         class="flex flex-col bg-white shadow-lg rounded-md dark:bg-gray-900 overflow-hidden lead"
       >
-        <a href={proj.url} class="img-wrapper h-4/6">
+        <a href={proj.url} class="img-wrapper md:h-4/6">
           <img
             src={getImageUrl(proj.id)}
             alt={proj.headline}
             class="object-cover h-full w-full object-center"
           />
         </a>
-        <div class="head-wrapper grad-purple flex-auto">
+        <div class="head-wrapper grad-purple flex-initial">
           <span class="block text-lg leading-none">{proj.year}</span>
           <a href={proj.url}>
             <h3>{proj.headline}</h3>
@@ -46,17 +40,17 @@
     {:else}
       <article
         id={proj.id || 'proj-' + i}
-        class="bg-white shadow-lg rounded-md dark:bg-gray-900 transition hover:shadow-2xl overflow-hidden relative"
+        class="bg-white shadow-lg rounded-md dark:bg-gray-900 transition hover:shadow-2xl relative wobble-hor-bottom"
       >
         <img
           src={getImageUrl(proj.id)}
           alt={proj.headline}
-          class="object-cover h-full w-full"
+          class="object-cover h-full w-full rounded-md"
           on:error={e => handleImage(e)}
         />
-        <div class="head-wrapper absolute h-full w-full inset-0">
+        <div class="head-wrapper absolute h-full w-full inset-0 rounded-md">
           <span class="block text-lg leading-none">{proj.year}</span>
-          <a href="{proj.url}">
+          <a href={proj.url}>
             <h3>{proj.headline}</h3>
           </a>
           <Toolbelt tech={proj.tech} />
@@ -68,12 +62,12 @@
 
 <style>
   .grid {
-    grid-auto-rows: 190px;
+    grid-auto-rows: auto 200px;
   }
 
   @media (min-width: 768px) {
     .grid {
-      grid-auto-rows: 200px 200px 230px;
+      grid-auto-rows: 200px;
       max-width: 940px;
     }
   }
@@ -83,8 +77,12 @@
     font-family: var(--tf);
   }
 
+  h3:hover {
+    @apply underline;
+  }
+
   .lead h3 {
-    @apply text-2xl;
+    @apply md:text-2xl;
   }
 
   .lead {
@@ -128,8 +126,8 @@
     background: none !important;
     background-image: linear-gradient(
       151deg,
-      rgba(60, 175, 210, 0.7) 7%,
-      rgba(28, 120, 166, 0.7) 93%
+      rgba(28, 119, 166, 0.7) 7%,
+      rgba(60, 175, 210, 0.7) 93%
     ) !important;
   }
 

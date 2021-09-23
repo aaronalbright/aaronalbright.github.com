@@ -7,7 +7,7 @@
 
 <style>
   a {
-    @apply font-bold py-1 px-4 rounded shadow-lg transition hover:scale-105 mr-4 mb-4 md:mb-0 md:mx-4;
+    @apply py-1 px-4 rounded shadow-lg transition hover:scale-105 mr-4 mb-4 md:mb-0 md:mx-4;
     background-color: #f33544;
     font-family: var(--tf);
     font-weight: 400;

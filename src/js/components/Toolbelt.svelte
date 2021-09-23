@@ -15,7 +15,7 @@
     class:hoverTech
     on:mouseleave|self={() => (hoverTech = false)}
     on:mouseenter|self={() => (hoverTech = true)}
-    on:focus={() => hoverTech = !hoverTech}
+    on:click={() => hoverTech = !hoverTech}
     ><i class="uil uil-arrow leading-none text-xl" /></span
   >
   {#if hoverTech}
@@ -46,5 +46,9 @@
     @apply hover:bg-white focus:bg-white hover:text-gray-600 transition hover:cursor-pointer flex items-center;
     font-family: var(--tf);
     font-weight: 600;
+  }
+
+  .tech-pill-hider.hoverTech {
+    @apply bg-white text-gray-600
   }
 </style>

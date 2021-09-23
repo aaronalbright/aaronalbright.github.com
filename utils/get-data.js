@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const Gootenberg = require('gootenberg');
 const { getCredentials } = require('./get-credentials');
 
-const file = './src/data/context.json';
+const file = './src/data/projects.json';
 
 async function getData() {
   const goot = new Gootenberg();
