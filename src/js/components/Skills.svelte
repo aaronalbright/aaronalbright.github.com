@@ -4,20 +4,20 @@
 </script>
 
 <div class="skills-wrapper max-w-3xl mx-auto mt-4 mb-8 relative">
-  <button
+  <!-- <button
     on:click={() => (expanded = !expanded)}
-    class="py-1 px-4 rounded transition text-white absolute z-10 shadow-xl"
+    class="py-1 px-4 rounded-md transition text-white absolute z-10 shadow-md"
     class:expanded
     >{expanded ? 'Collapse' : 'Expand'}<i
       class="uil {expanded ? 'uil-compress-alt-left' : 'uil-maximize-left'}"
     /></button
-  >
+  > -->
   <div
-    class="skills bg-gray-800 p-4 opacity-0 rounded h-0 overflow-hidden transition-all flex list-inside justify-between text-gray-50 flex-wrap"
+    class="skills p-5 shadow-md rounded-md flex list-inside justify-between text-gray-50 flex-wrap"
     class:expanded
   >
     {#each skills as s}
-        <li class="opacity-0 transition delay-200">{s}</li>
+      <li class="leading-9">{s}</li>
     {/each}
   </div>
 </div>
@@ -35,15 +35,7 @@
   }
 
   .skills.expanded {
-    @apply pt-12 w-full h-auto opacity-100;
+    background-image: linear-gradient(135deg, #425368 0%, #1f2937 100%);
   }
 
-  .skills.expanded li {
-    @apply opacity-100;
-  }
-
-  .skills-wrapper {
-    min-height: 32px;
-    max-height: 112px;
-  }
 </style>

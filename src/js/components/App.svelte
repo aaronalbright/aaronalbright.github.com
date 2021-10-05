@@ -22,8 +22,7 @@
   <Projects/>
 
   <div>
-    <h2 class="text-xl max-w-3xl mx-auto text-gray-900 dark:text-red-50">More coming soon!</h2>
-    <p class="comment-desc max-w-3xl mx-auto">The consequences of code decay circa 2018</p>
+    <h2 class="text-xl max-w-3xl mx-auto text-gray-900 dark:text-red-50">More coming soon?</h2>
   </div>
 </main>
 

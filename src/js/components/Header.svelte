@@ -12,7 +12,7 @@
 </header>
 
 <div class="subhead mx-auto flex flex-col md:flex-row text-xl mb-8 text-gray-800 dark:text-purple-100">
-  <h2><img src="{blueHex}" alt="Blue hexagon with plus sign inside"><span>News_Development</span></h2>
+  <h2><img src="{blueHex}" alt="Blue hexagon with plus sign inside"><span>Web_Development</span></h2>
   <h2><img src="{purpleHex}" alt="Purple hexagon with plus sign inside"><span>Data_Visualization</span></h2>
   <h2><img src="{redHex}" alt="Red hexagon with plus sign inside"><span>Experience_Design</span></h2>
 </div>
@@ -50,7 +50,7 @@
   }
 
   h2 {
-      @apply flex items-center mx-3;
+      @apply flex items-center mx-3 mb-2 md:mb-0;
   }
 
   h2 img {

@@ -12,7 +12,7 @@
       "url": "https://www.miamiherald.com/news/coronavirus/article250472896.html",
       "id": "vaccine",
       "year": "2021",
-      "tech": ["Svelte", "Vite", "D3.js"]
+      "tech": ["Svelte", "Vite.js", "D3.js"]
     },
     {
       "headline": "Ibis: Hurricane GIS data scraper and formatting application",
