@@ -16,7 +16,7 @@
     },
     {
       "headline": "Ibis: Hurricane GIS data scraper and formatting application",
-      "url": "https://i.imgur.com/WqofFJJ.png",
+      "url": "https://github.com/aaronalbright/ibis-gis",
       "id": "hurricane",
       "year": "2021",
       "tech": ["Node.js", "D3.js", "Vite.js"]
