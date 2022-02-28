@@ -1,6 +1,13 @@
 {
   "dataViz": [
     {
+      "headline": "Collapse reconstructed: How years of problems converged the night Champlain Towers fell",
+      "url": "https://www.miamiherald.com/news/special-reports/surfside-investigation/article256633336.html",
+      "id": "houseofcards",
+      "year": "2021",
+      "tech": ["Svelte", "Vite.js", "Google Cloud"]
+    },
+    {
       "headline": "People just like you get COVID-19. See the stories and information most relevant to you",
       "url": "https://www.miamiherald.com/news/coronavirus/article244283112.html",
       "id": "justlikeyou",
